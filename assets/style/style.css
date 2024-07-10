@@ -40,7 +40,9 @@ body {
 .texto {
     margin-bottom: 1rem;
     background-color: #e5e9ec;
-    color: #072b61;
+    color:#072b61;
+    
+
 }
 
 .texto textarea {
@@ -114,29 +116,36 @@ footer {
 
 @media screen and (max-width: 928px) {
     .contenedor {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .contenedorDer {
+        border-radius: 12px;
         width: 90%;
-        background-color: #e5e9ec; /* Asegúrate de definir el color de fondo aquí */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedorIzq {
+        
     }
 }
 
-@media screen and (min-width: 768px) {
-    body {
-        height: 82vh; /* Ajuste de altura del body */
+@media screen and (max-width: 768px) {
+    body{
+        height: 82vh;
     }
 
     .contenedor {
-        height: 80vh; /* Ajuste de altura del contenedor */
+        display: grid;
+        height:80vh;
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
-    .contenedorIzq{
-        display: none;
-    }
-    .containerImg{
-        display:none;
+    .contenedorDer{
+        height: 65vh;
     }
 
     .texto textarea {
@@ -147,4 +156,8 @@ footer {
         border-radius: 0.25rem;
         font-size: 0.9rem;
     }
+    footer{
+        margin-top: 45rem;
+    }
+
 }
