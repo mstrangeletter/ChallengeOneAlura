@@ -1,0 +1,150 @@
+body {
+    background-color: #CED4DA;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
+    gap: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #e5e9ec;
+    border-radius: 12px;
+}
+
+.contenedorDer,
+.contenedorIzq {
+    padding: 1rem;
+    height: 80vh;
+}
+
+.contenedorDer {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedorIzq {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.texto {
+    margin-bottom: 1rem;
+    background-color: #e5e9ec;
+    color: #072b61;
+}
+
+.texto textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.containerBtn {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    background-color: #072b61;
+    color: white;
+    width: 10rem;
+    height: 2.7rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #064085;
+}
+
+.containerImg {
+    margin-bottom: 1rem;
+}
+
+.img {
+    height: 300px;
+    width: 200px;
+    background-image: url("../img/Muñeco.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.textoA {
+    text-align: center;
+}
+
+footer {
+    background-color: #072b61;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameAlumno h4 {
+    margin: 0;
+}
+
+.aluraONE h3 {
+    margin: 0;
+}
+
+@media screen and (max-width: 928px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedorDer {
+        width: 90%;
+        background-color: #e5e9ec; /* Asegúrate de definir el color de fondo aquí */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        height: 82vh; /* Ajuste de altura del body */
+    }
+
+    .contenedor {
+        height: 80vh; /* Ajuste de altura del contenedor */
+        grid-template-columns: 1fr;
+    }
+    .contenedorIzq{
+        display: none;
+    }
+    .containerImg{
+        display:none;
+    }
+
+    .texto textarea {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        font-size: 0.9rem;
+    }
+}

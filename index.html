@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desencriptador</title>
+    <link rel="stylesheet" href="./assets/style/normalize.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <img src="./assets/img/Group 3.png" alt="" style="padding: 2rem">
+        <div class="contenedorDer">
+            <div class="texto">
+                <h2>Ingrese texto aquí</h2>
+                <textarea placeholder="Ingrese su texto aqui..." id="textoTextarea" rows="10" cols="50"></textarea>
+            </div>
+            <div class="mostrarResultado">
+                <span id="resultado">...</span>
+            </div>
+            <div class="containerBtn">
+                <button class="btn" id="encriptarBtn" onclick="encriptarTexto()">Encriptar</button>
+                <button class="btn" id="desencriptarBtn" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="contenedorIzq">
+            <div class="containerImg">
+                <div class="img"></div>
+            </div>
+            <div class="textoA">
+                <h2>Ningún mensaje fue <br> encontrado</h2>
+                <p>Ingrese texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="containerFooter">
+            <div class="nameAlumno">
+                <h4>Miguel Cartagena</h4>
+            </div>
+            <div class="aluraONE">
+                <h3>Alura ONE</h3>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
