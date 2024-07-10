@@ -144,8 +144,12 @@ footer {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+    .containerImg{
+        display: none;
+    }
     .contenedorDer{
-        height: 65vh;
+        height: 58vh;
+        margin-bottom: 2rem;
     }
 
     .texto textarea {
@@ -158,6 +162,9 @@ footer {
     }
     footer{
         margin-top: 45rem;
+    }
+    img{
+        ßplay: none;
     }
 
 }

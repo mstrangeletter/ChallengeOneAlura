@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("Por favor, ingrese solo letras minúsculas sin símbolos ni números.");
     const textoIngresadoSpan = document.getElementById("textoTextarea");
     const resultadoSpan = document.getElementById("resultado");
+    const mensajeExiste = document.getElementById("msjAvisoUser");
+    const mensajeRep = document.getElementById("parrafoImg");
 
     const encriptar = (texto) => {
         texto = texto.toLowerCase(); // Convertir todo a minúsculas
@@ -28,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         textoIngresadoSpan.textContent = texto || "Ningún mensaje fue encontrado";
         const textoEncriptado = encriptar(texto);
         resultadoSpan.textContent = textoEncriptado || "Ningún mensaje fue encontrado";
+        mensajeRep.textContent = textoEncriptado;
     };
 
     window.desencriptarTexto = () => {
@@ -35,5 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         textoIngresadoSpan.textContent = texto || "Ningún mensaje fue encontrado";
         const textoDesencriptado = desencriptar(texto);
         resultadoSpan.textContent = textoDesencriptado || "Ningún mensaje fue encontrado";
+        mensajeRep.textContent = textoDesencriptado;
+        mensajeExiste.textContent = "Este es su mensaje: "
     };
 });
